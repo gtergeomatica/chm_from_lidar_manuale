@@ -25,7 +25,7 @@ Per gli utenti di Regione Veneto è stato inoltre realizzato un tutorial dettagl
 * una sezione dedicata al post-processamento dei CHM ottenuti dall'utilizzo del plugin (es. riclassificazione e successiva vettorializzazione.)
 
 |**Questo Tutorial è disponibile al seguente link:**
-https://tutorial-lidar-qgis.readthedocs.io/en/latest/
+|https://tutorial-lidar-qgis.readthedocs.io/en/latest/
 
 Glossario
 ------------------------------------------
