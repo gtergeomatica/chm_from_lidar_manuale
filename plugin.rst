@@ -13,51 +13,6 @@ Nel primo caso il CHM di ogni singola tile appartenente alla campagna selezionat
 
 Di seguito verranno meglio dettagliati tutte le possibili casistiche, i parametri definibili dall'utente e in generale il workflow del plugin CHM from LIDAR.
 
-
-
-
-Connessione WCS/WMS al portale cartografico
---------------------------------------------
-
-L'Infrastruttura Dati Regionali (IDT) di Regione Veneto è ormai arrivata alla sua versione 2.0 e accessibile all'inirizzo https://idt2.regione.veneto.it/
-
-
-Da li si possono caricare e visualizzare i seguenti servizi:
-
-- servizi OWS (Web Mapping Services, Web Feature Services e volendo Web Coverage Services[1]_) presenti su geoserver regionale: https://idt2-geoserver.regione.veneto.it/geoserver/ows (prevalentemente dati vettoriali o altri dati anche raster che non utilizzano cache)
-
-- servizi WMTS: https://idt2.regione.veneto.it/gwc/service/wmts (Layer raster o che utilizzano la cache es. ortofoto)
-
-- catalogo metadati: https://idt2.regione.veneto.it/geoportal/csw 
-
-.. [1] per ora i geoservizi WCS non sono disponibili
-
-Connessione ai dati regionali 
---------------------------------------------
-Di default nel file *tile_dsm_dtm* sono inclusi i percorsi alle cartelle dell'infrastruttura di rete regionale (Regione Veneto). E possibile modificarli e personalizzarli con i propri percorsi (se necessario). 
-
-Responsabile dei dati è il dott. Umberto Trivelloni (referente dell'Ufficio Cartografico regionale) - umberto.trivelloni@regione.veneto.it
- 
-
- 
-
-Repository github e installazione del plugin
---------------------------------------------
-Attualmente il plugin CHM from LIDAR è in attesa di approvazione da parte del Team di QGIS, pertanto non è ancora disponibile dalla repository ufficiale di QGIS.
-
-Il plugin CHM from LIDAR è comunque disponibile alla repository github https://github.com/gtergeomatica/chm_from_lidar e può essere scaricato come file .zip e facilmente installato in QGIS seguendo i passi elencati sotto:
-
-* da un qualsiasi browser web andare all'indirizzo https://github.com/gtergeomatica/chm_from_lidar
-* Clickare su **Clone or Download** e successivamente su **Download ZIP** e salvare il file zip in una cartella sul proprio PC
-.. image:: img/download.png
-* Da QGIS menù Plugins --> Gestisci e installa Plugin --> Installa da ZIP
-.. image:: img/installa_zip.png
-Da qui è necessario selezionare tramite il pulsante di navigazione il file ZIP scaricato precedentemente e infine clickare su *Installa Plugin*. Una volta terminata l'installazione il plugin CHM from LIDAR sarà visibile nell'elenco dei plugin installati e l'icona del plugin sarà stata aggiunta automaticamente alla barra degli strumenti.
-
-.. image:: img/installato.png
-
-Una volta che il plugin CHM from LIDAR sarà approvato dal Team di QGIS sarà invece possibile installarlo con la procedura standard per l'installazione dei Plugin di QGIS da menù Plugins --> Gestisci e installa Plugin --> Non Installati
-
 Caratteristiche e funzionamento
 --------------------------------------------
 Come già anticipato, lo scopo principale del plugin CHM from LIDAR è calcolare il CHM a partire dai dati Lidar (DSM e DTM) ottenuti dalle varie campagne di rilievo che si sono tenuto sul territorio. Il workflow generale del Plugin è composto da:
@@ -88,7 +43,7 @@ Tutti i parametri di input necessari al calcolo del CHM sono settati dall'utente
 * **14 - OK:** è il pulsante che l'ancia l'intero processamento. Una volta definiti tutti i parametri in input l'utente clickando sul pulsante Ok darà avvio al processo vero e proprio. Come già anticipato al punto 12, in caso di messaggi di errore che richiedano da parte dell'utente un'ulteriore interazione con l'interfaccia grafica, sarà possibile andare a modificare i parametri necessari e successivamente clickare nuovamente il tasto ok per rilanciare il processamento.
 * **15 - Close:** l'interfaccia grafica del plugin resta aperta e attiva finchè l'utente non la chiuderà clickando sul tasto Close. In questo modo si chiuderà l'interfaccia grafica e tutti i vari parametri di input verranno ripristinati ai loro valori di default.
 
-Prove di elaborazione
+Esempi
 --------------------------------------------
 
 In occasione del corso è stato preparato un dataset ridotto che verrà utilizzato per mostrare il funzionamento del plugin ed esemplificare le diverse casistiche che si possono presentare. Nella cartella **dataset_corso_06_19_venezia** sono contenuti:
