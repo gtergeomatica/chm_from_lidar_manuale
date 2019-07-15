@@ -54,9 +54,6 @@ Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile appart
 
 .. image:: img/solo_campagna_bis.png
 
-* Selezionare la campagna **CAMPAGNA_TEST\\Contratto_140** dal menù a tendina *Select a campaign*
-* Scegliere una cartella in cui salvare gli output del processo
-
 Nel caso della sola campagna di volo sono abilitate le funzioni che consentono:
 
 * la scelta del formato file, 
@@ -76,19 +73,11 @@ I CHM calcolati vengono automaticamente caricati nel progetto Qgis insieme al fi
 
 Scelta di un'Area di interesse e della Campagna di Volo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Caricare nel progetto Qgis il file vettoriale della Carta Forestale. Si selezioni una geometria che rappresenterà l'area di interesse per la quale verrà calcolato il CHM. **NB:** utilizzando un dataset limitato e non avendo quindi a disposizione tutti i file DSM e DTM del territorio di Cortina utilizzeremo un'AOI che sappiamo intersecare la campagna **CAMPAGNA_TEST\\Contratto_140**
-
-.. image:: img/aoi_campagna.png
-
 In questo caso verranno calcolati i CHM per tutte le tile che intersecano l'area di interesse selezionata.
 
 .. image:: img/aoi_campagna_gui_bis.png
 
-* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
-* Checkare la casella *Using selected features*
-* Selezionare la campagna **CAMPAGNA_TEST\\Contratto_140** dal menù a tendina *Select a campaign*
-* Scegliere un nome per il file clip (senza estensione)
-* Scegliere una cartella in cui salvare gli output del processo
+Se il layer selezionato come Area di Interesse contiene geometrie selezionate, si attiva la casella di controllo *'Usa solo le geometrie selezionate'*. Checkando la casella verranno utilizzate come area di interesse le sole geometrie selezionate, altrimenti l'interò layer.
 
 Nel caso della scelta di un'AOI e della campagna di volo sono abilitate le funzioni che consentono:
 
@@ -112,96 +101,3 @@ Si tratta del caso in cui l'utente voglia calcolare il CHM per una particolare a
 * 1 - l'AOI interseca una sola campagna di volo: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso verrà utilizzata la risoluzione e il sistema di riferimento originari dei dati qualora l'utente non ne abbia settati di diversi. 
 * 2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatte in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore.
 * 3 - l'AOI interseca più campagne di volo sovrapposte: il processo si blocca e verrà restituito un messaggio con elencate alcune informazioni relative alle diverse campagne di volo (ente, nome della campagna, anno e risoluzione) e verrà richiesto all'utente di selezionare la campagna per la quale si vuole calcolare il CHM.
-
-**CASO 1**
-
-Si utilizzi la stessa area di interesse del caso precedente che sappiamo intersecare la sola campagna di volo  **CAMPAGNA_TEST\\Contratto_140**.
-
-.. image:: img/solo_aoi_gui.png
-
-* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
-* Checkare la casella *Using selected features*
-* Scegliere un nome per il file clip (senza estensione)
-* Scegliere una cartella in cui salvare gli output del processo
-
-Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
-
-* la scelta della risoluzione
-* la scelta del formato file, 
-* la scelta del sistema di riferimento,
-* la rimozione dei valori negativi
-* la rimozione dei valori sopra una certa soglia
-
-**NB:** per quanto riguarda la risoluzione se l'utente non definisce un valore nell'apposita box verrà utilizzata la risoluzione originaria dei dati (DSM e DTM)
-
-Clickando su OK si avvia il processo di calcolo
-
-.. image:: img/solo_aoi_end.png
-
-**CASO 2**
-
-Selezioniamo un'area di interesse che sappiamo intersecare le tile di due campagne differenti che non si sovrappongono. L'area selezionata infatti si sovrappone alle due campagne di volo create ad hoc per il corso, ovvero la **CAMPAGNA_TEST\\Contratto_140** e la **CAMPAGNA_TEST_ADIACENZA\Contratto_XXX**.
-
-.. image:: img/solo_aoi_caso2_gui.png
-
-* Selezionare il layer che contiene l'area di interesse **c0605011_categforestali** dal menù a tendina *Select an AOI*
-* Checkare la casella *Using selected features*
-* Scegliere un nome per il file clip (senza estensione)
-* Scegliere una cartella in cui salvare gli output del processo
-
-Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
-
-* la scelta della risoluzione
-* la scelta del formato file, 
-* la scelta del sistema di riferimento,
-* la rimozione dei valori negativi
-* la rimozione dei valori sopra una certa soglia
-
-**NB:** per quanto riguarda la risoluzione se l'utente non definisce un valore nell'apposita box verrà utilizzata la risoluzione originaria dei dati (DSM e DTM). In questo specifico caso però, è possibile che le risoluzioni siano diverse dal momento che le campagne di volo che vengono intersecate sono più di una. Se così fosse il plugin utilizzerà di default la risoluzione minore. Qualora invece l'utente avesse definito una risoluzione come parametro in input verrà ovviamente utilizzata quella definita.
-
-Clickando su OK si avvia il processo di calcolo
-
-.. image:: img/solo_aoi_caso2_end.png
-
-Si provi a modificare la risoluzione nella tabella del layer *tile_dsm_dtm* per almeno una delle tile che vengono intersecate dall'AOI selezionata inserendo un valore maggiore di quello presente in tabella (es. 3). Una volta salvata la modifica alla tabella, si rilanci il processo premendo OK. In questo caso il file di clip verrà creato con una risoluzione pari al valore massimo trovato in tabella per le tile selezionate.
-
-.. image:: img/solo_aoi_caso2_maxres.png
-
-In questo caso il plugin fa anche un controllo sul sistema di riferimento delle diverse campagne che vengono selezionate. Nel caso in cui il sistema di riferimento sia diverso, il processo si blocca e il plugin restituisce un messaggio di warning in cui vengono elencati i sistemi di riferimento trovati e si richiede all'utente di indicare un sistema di riferimento clickando sul tasto CRS. NB: questo particolare caso non è riproducibile in occasione del corso in quanto i dati messi a nostra disposizione hanno tutti lo stesso sistema di riferimento.
-
-.. image:: img/solo_aoi_caso2_rs.png
-
-**CASO 3**
-
-In questo caso utilizziamo come area di interesse il poligono all'interno del file AOI.shp presente all'interno della cartella **dataset_corso_06_19_venezia**. Si cariche lo shapefile AOI.shp all'interno del progetto Qgis. Si noti che il layer contiene una sola geometria quindi non sarà necessario selezionarla per utilizzarla come area di interesse all'interno del plugin. 
-
-L'area di interesse in questo caso si interseca con la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** creata ad hoc per il corso e a altre campagne che in questo caso però si sovrappongono fra loro.
-
-.. image:: img/solo_aoi_caso3_gui.png
-
-* Selezionare il layer che contiene l'area di interesse **AOI** dal menù a tendina *Select an AOI*
-* La casella *Using selected features* rimarrà disabilitata
-* Scegliere un nome per il file clip (senza estensione)
-* Scegliere una cartella in cui salvare gli output del processo
-
-Nel caso della scelta della sola AOI sono abilitate le funzioni che consentono:
-
-* la scelta della risoluzione
-* la scelta del formato file, 
-* la scelta del sistema di riferimento,
-* la rimozione dei valori negativi
-* la rimozione dei valori sopra una certa soglia
-
-Clickando su OK si avvia il processo di calcolo
-
-.. image:: img/solo_aoi_caso3_war.png
-
-Il plugin blocca il processso e restituisce un messaggio di warning in cui vengono elencate le campagne di volo selezionate. Per ogni campagna viene indicato l'ente, il nome della campagna, l'anno e la risoluzione. Viene quindi richiesto all'utente di selezionare la campagna di volo sulla quale si desidera calcolare il CHM.
-
-* Selezionare la campagna **CAMPAGNA_TEST_SOVRAPPOSIZIONE\Contratto_YYY** dal menù a tendina *Select a campaign*
-
-Clickando nuovamente su OK si avvia il processo di calcolo
-
-.. image:: img/solo_aoi_caso3_end.png
-
-In questo caso se l'utente non ha fornito in input un valore di risoluzione verrà utilizzata per generare il clip quella della campagna che è stata selezionata, altrimenti verrà utilizzato il valore fornito.
