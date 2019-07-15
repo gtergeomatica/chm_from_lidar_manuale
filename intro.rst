@@ -24,7 +24,7 @@ Per gli utenti di Regione Veneto è stato inoltre realizzato un tutorial dettagl
 * una dettagliata descrizione dell'utilizzo e funzionamento del Plugin CHM from LIDAR con esempi pratici basati sui dati (DSM/DTM) di Regione Veneto
 * una sezione dedicata al post-processamento dei CHM ottenuti dall'utilizzo del plugin (es. riclassificazione e successiva vettorializzazione.)
 
-|**Questo Tutorial è disponibile al seguente link:**
+|**Questo Tutorial è disponibile al seguente link:**\
 |https://tutorial-lidar-qgis.readthedocs.io/en/latest/
 
 Glossario
