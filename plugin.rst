@@ -2,8 +2,10 @@ Il plugin CHM from LIDAR
 ==================================
 Il Plugin CHM from LIDAR consente la generazione del Canopy Height Model (CHM) a partire da dati Lidar, in particolare DTM e DSM (First Impulse).
 
-I principali input del plugin sono i file DSM e DTM derivanti dalle diverse campagne di volo, dai quali verrà calcolato il CHM, e un file vettoriale (formato GeoPackage) contenente le geometrie degli squadri (tile) che compongono le diverse campagne di rilievo. In particolare quest ultimo viene automaticamente caricato all'interno del progetto QGIS all'avvio del plugin. Qualora invece fosse stato già caricato durante una sessione di lavoro precedente non sarà nuovamente caricato ma verrà semplicemente reso attivo quello già presente.
-Il file vettoriale delle tile, nominato *tile_dsm_dtm*, contiene nella tabella alfanumerica associata tutte le informazioni necessarie al reperimento dei relativi file DSM e DTM per il calcolo del CHM (percorso ai file, nome del file, nome della campagna, sistema di riferimento, ecc.). Il plugin quindi, sulla base dei parametri di input richiesti dall'utente, sarà in grado di recuperare automaticamente i DSM e DTM delle tile selezionate leggendo tutte le informazioni necessarie (percorso + nome file) dalla tabella associata al file tile_dsm_dtm.
+I principali input del plugin sono i file DSM e DTM derivanti dalle diverse campagne di volo, dai quali verrà calcolato il CHM, e un file vettoriale (formato GeoPackage) contenente le geometrie degli squadri (tile) che compongono le diverse campagne di rilievo. Di default questo file, nominato *tile_dsm_dtm.gpkg*, contiene le geometrie e le informazioni relative ai dati di Regione Veneto, che ha finanziato lo sviluppo del plugin. Ovviamente può essere modificato dall'utente inserendo i propri dati. Per la creazione ottimale di un nuovo file *tile_dsm_dtm.gpkg*, si raccomanda l'utilizzo del Plugin QGIS **Lidar Tile Maker** che è stato sviluppato appositamente per facilitare la creazione del file delle tile e di conseguenza facilitare l'utilizzo del Plugin CHM from LIDAR a tutti gli utenti. Il manuale del Plugin **Lidar Tile Maker** è disponibile a questo link: https://lidar-tile-maker-manuale.readthedocs.io/en/latest/
+
+In file *tile_dsm_dtm.gpkg* viene automaticamente caricato all'interno del progetto QGIS all'avvio del plugin. Qualora invece fosse stato già caricato durante una sessione di lavoro precedente non sarà nuovamente caricato ma verrà semplicemente reso attivo quello già presente. Allo stesso modo, per utilizzare un file di tile creato con il Plugin Lidar Tile Maker sarà sufficiente caricarlo nel progetto Qgis prima di avviare il plugin CHM from LIDAR. In questo modo il plugin non aggiungerà quello di default ma renderà attivo quello creato con il Plugin Lidar Tile Maker.
+Il layer vettoriale delle tile, nominato *tile_dsm_dtm*, contiene nella tabella alfanumerica associata tutte le informazioni necessarie al reperimento dei relativi file DSM e DTM per il calcolo del CHM (percorso ai file, nome del file, nome della campagna, sistema di riferimento, ecc.). Il plugin quindi, sulla base dei parametri di input richiesti dall'utente, sarà in grado di recuperare automaticamente i DSM e DTM delle tile selezionate leggendo tutte le informazioni necessarie (percorso + nome file) dalla tabella associata al file tile_dsm_dtm.
 
 NB: non rinominare il layer *tile_dsm_dtm* all'interno del progetto QGIS, il plugin infatti lo richiama automaticamente ogni volta che viene attivato. Qualora si modificasse il nome del layer nel progetto, il plugin non lo riconoscerebbe più e lo ricaricherebbe all'interno del progetto stesso.
 
@@ -45,34 +47,6 @@ Tutti i parametri di input necessari al calcolo del CHM sono settati dall'utente
 
 Esempi
 --------------------------------------------
-
-In occasione del corso è stato preparato un dataset ridotto che verrà utilizzato per mostrare il funzionamento del plugin ed esemplificare le diverse casistiche che si possono presentare. Nella cartella **dataset_corso_06_19_venezia** sono contenuti:
-
-* file tile_regione_cortina.gpkg: estrazione del file *tile_dsm_dtm* per il comune di Cortina d'Ampezzo
-* file c0605011_categforestali.shp: estrazione della Carta Forestale Regionale per il comune di Cortina d'Ampezzo
-* cartella dati_lidar: contiene le sottocartelle relative ad alcune campagne di volo effettuate sul territorio del comune di Cortina d'Ampezzo, in particolare per il corso sono state selezionate solo alcune campagne e un numero limitato di tile per ridurre i tempi di computazione in aula
-
-Operazioni preliminari
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-* Avviare Qgis
-* Installazione del Plugin CHM from LIDAR (si veda sopra)
-* Avviare il Plugin clickando sull'icona che sarà comparsa nella toolbar a installazione avvenuta. Come già descritto, all'avvio del plugin viene automaticamente caricato nel progetto Qgis il file *tile_dsm_dtm* contenente le tile delle diverse campagne di volo effettuato sul territorio regionale. **NB: per il corso verrà utilizzato il file tile_regione_cortina.gpkg, quindi rimuovere dal progetto il layer tile_dsm_dtm**
-
-.. image:: img/rimuovere_layer.png
-
-* Caricare il layer **tile_regione_cortina.gpkg**. Di default al caricamento del layer questo viene nominato *tile_regione_cortina tile_dsm_dtm* rinominare il layer in **tile_dsm_dtm**
-
-.. image:: img/rinomina_layer.png
-
-Una volta rinominato il layer, aprire la tabella degli attributi e con l'utilizzo del calcolatore di campi sostituire il contenuto della colonna **P_BASE** con il percorso assoluto alla cartella dati_lidar salvata sul PC
-
-.. image:: img/tabella_path.png
-
-.. image:: img/path_base.png
-
-**ATTENZIONE alla sintassi!** E' molto importante che il percorso sia scritto correttamente, infatti il contenuto della colonna P_BASE unito alle altre colonne (P_CAMPAGNA, P_DTM e P_DSM) compongono il percorso ai file DSM e DTM che il plugin utilizza per il calcolo del CHM.
-
-**NB:** queste operazioni preliminari sono richieste solo per il corso, in seguito sarà possibile utilizzare direttamente il file tile_dsm_dtm che viene caricato all'avvio del plugin e che contiene già i percorsi alle cartelle di Regione Veneto.
 
 Scelta della sola Campagna di Volo
 """"""""""""""""""""""""""""""""""""""""
