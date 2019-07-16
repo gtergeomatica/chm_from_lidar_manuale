@@ -20,21 +20,23 @@ msgstr ""
 
 #: ../../intro.rst:2
 msgid "Introduzione"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../intro.rst:5
 msgid "Credits"
-msgstr ""
+msgstr "Credits"
 
 #: ../../intro.rst:8
 msgid "https://psrveneto.it/"
-msgstr ""
+msgstr "https://psrveneto.it/"
 
 #: ../../intro.rst:11
 msgid ""
 "Il Plugin CHM from LIDAR è stato finanziato dal Programma di sviluppo "
 "rurale per il Veneto 2014-2020"
 msgstr ""
+"The Plugin CHM from Lidar has been funded by the Programma di sviluppo "
+"rurale per il Veneto 2014-2020"
 
 #: ../../intro.rst:13
 msgid ""
