@@ -139,6 +139,15 @@ msgid ""
 "Anche il clip verrà salvato nella cartella di output definita dall'utente"
 " con nome, formato e sistema di riferimento desiderati."
 msgstr ""
+"In the first case, the CHM of each tile belonging to the selected campaign "
+"is computed and saved with the file format and the CRS defined "
+"by the user in the chosen output folder. In the second case, "
+"the CHM of each tile which intersects the selected AOI is computed "
+"and saved with the file format and the CRS defined by the user in the "
+"chosen output folder. Moreover, it is also created a raster file of the "
+"computed CHM clipped along the boundary of the selected AOI. "
+"Also the raster clip file is saved with the file name, file format and the "
+"CRS defined by the user in the chosen output folder."
 
 #: ../../plugin.rst:16
 msgid ""
@@ -146,10 +155,13 @@ msgid ""
 "parametri definibili dall'utente e in generale il workflow del plugin CHM"
 " from LIDAR."
 msgstr ""
+"In the following, all the possible case histories, the "
+"parameters and in general the CHM from LIDAR plugin workflow "
+"will be described in detail."
 
 #: ../../plugin.rst:19
 msgid "Caratteristiche e funzionamento"
-msgstr ""
+msgstr "Features and operation"
 
 #: ../../plugin.rst:20
 msgid ""
@@ -158,6 +170,9 @@ msgid ""
 "varie campagne di rilievo che si sono tenuto sul territorio. Il workflow "
 "generale del Plugin è composto da:"
 msgstr ""
+"As already mentioned, the main purpose of the CHM from LIDAR Plugin is "
+"the computatiuon of the CHM starting from Lidar data (DSM e DTM) obtained "
+"from the survey campaigns. The general workflow of the Plugin consists of:"
 
 #: ../../plugin.rst:22
 msgid ""
