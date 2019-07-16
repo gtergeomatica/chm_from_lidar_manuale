@@ -20,13 +20,15 @@ msgstr ""
 
 #: ../../plugin.rst:2
 msgid "Il plugin CHM from LIDAR"
-msgstr ""
+msgstr "The CHM from LIDAR Plugin"
 
 #: ../../plugin.rst:3
 msgid ""
 "Il Plugin CHM from LIDAR consente la generazione del Canopy Height Model "
 "(CHM) a partire da dati Lidar, in particolare DTM e DSM (First Impulse)."
 msgstr ""
+"The CHM from LIDAR plugin allows to compute the Canopy Height Model "
+"(CHM) starting from Lidar data, in particular DTM and DSM (First Impulse)."
 
 #: ../../plugin.rst:5
 msgid ""
@@ -45,6 +47,20 @@ msgid ""
 "Tile Maker** è disponibile a questo link: https://lidar-tile-maker-"
 "manuale.readthedocs.io/en/latest/"
 msgstr ""
+"The main inputs of the plugin are the DSM and DTM file from "
+"different flight campaigns, for the computation of the CHM, and a "
+"vector file (format GeoPackage) that contains the tiles geometries which "
+"compose the survey campaign. By default this file, "
+"named *tile_dsm_dtm.gpkg*, contains the geometries and the "
+"information related to the data of Regione Veneto who funded the "
+"development of the plugin. Obviously, this file can be modified by the user "
+"including its own data. In order to create a new *tile_dsm_dtm.gpkg* "
+"file, it is recommended the use of the **Lidar Tile Maker** Plugin "
+"which has been developed to make the creation of the tiles file "
+"easier and hence to simplify the use of the CHM from LIDAR plugin to "
+"all users. The manual of the **Lidar "
+"Tile Maker** Plugin is available to this link: https://lidar-tile-maker-"
+"manuale.readthedocs.io/en/latest/"
 
 #: ../../plugin.rst:7
 msgid ""
