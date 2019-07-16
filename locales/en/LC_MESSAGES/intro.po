@@ -64,52 +64,63 @@ msgid ""
 "tutorial dettagliato sull'utilizzo dei dati LIDAR a fini forestali in "
 "QGIS. Il tutorial (in italiano) comprende:"
 msgstr ""
+"It has been also developed a detailed tutorial **for users of Regione Veneto** "
+"about the use of LIDAR data for forestry purposes in "
+"QGIS. The tutorial (only in Italian) includes:"
 
 #: ../../intro.rst:21
 msgid ""
 "una breve sezione introduttiva sulla tecnologia LIDAR e le sue principali"
 " applicazioni in ambito ambientale e non solo,"
 msgstr ""
+"a brief introduction about LIDAR tech and its main"
+" applications in the environmental fields and others,"
 
 #: ../../intro.rst:22
 msgid ""
 "una dettagliata descrizione dell'utilizzo e funzionamento del Plugin CHM "
 "from LIDAR con esempi pratici basati sui dati (DSM/DTM) di Regione Veneto"
 msgstr ""
+"a detailed description of the use and operation of the CHM "
+"from LIDAR Plugin including pratical examples about data (DSM/DTM) of Regione Veneto"
 
 #: ../../intro.rst:23
 msgid ""
 "una sezione dedicata al post-processamento dei CHM ottenuti dall'utilizzo"
 " del plugin (es. riclassificazione e successiva vettorializzazione.)"
 msgstr ""
+"a section dedicated to the post-processing of the resulting CHM obtained from the use"
+" of the plugin (eg. riclassification and vectorization)."
 
 #: ../../intro.rst:25
 msgid ""
 "**Il Tutorial è disponibile a questo link:** https://tutorial-lidar-"
 "qgis.readthedocs.io/en/latest/"
 msgstr ""
+"**The Tutorial is available at the link:** https://tutorial-lidar-"
+"qgis.readthedocs.io/en/latest/"
 
 #: ../../intro.rst:28
 msgid "Glossario"
-msgstr ""
+msgstr "Glossary"
 
 #: ../../intro.rst:30
 msgid "CHM: Canopy Height Model"
-msgstr ""
+msgstr "CHM: Canopy Height Model"
 
 #: ../../intro.rst:31
 msgid "DSM: Digital Surface Model"
-msgstr ""
+msgstr "DSM: Digital Surface Model"
 
 #: ../../intro.rst:32
 msgid "DTM: Digital Terrain Model"
-msgstr ""
+msgstr "DTM: Digital Terrain Model"
 
 #: ../../intro.rst:33
 msgid "GIS: Geographic Information System"
-msgstr ""
+msgstr "GIS: Geographic Information System"
 
 #: ../../intro.rst:34
 msgid "LIDAR: Laser Imaging Detection and Ranging"
-msgstr ""
+msgstr "LIDAR: Laser Imaging Detection and Ranging"
 
