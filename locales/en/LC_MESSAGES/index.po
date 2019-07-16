@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../index.rst:7
 msgid "Manuale: CHM from LIDAR Plugin QGIS"
-msgstr ""
+msgstr "Manual: CHM from LIDAR Plugin QGIS"
 
 #: ../../index.rst:8
 msgid "Contenuti:"
-msgstr ""
+msgstr "Subject:"
 
 #~ msgid "Tutorial: utilizzo di QGIS per la gestione di dati LIDAR forestali"
 #~ msgstr ""
