@@ -42,17 +42,21 @@ msgstr ""
 msgid ""
 "Organismo responsabile dell’informazione: GTER Innovazione in Geomatica, "
 "GNSS e GIS"
-msgstr ""
+msgstr "" 
+"The Organisation responsible of the information is:  GTER Innovazione in Geomatica, "
+"GNSS e GIS"
 
 #: ../../intro.rst:15
 msgid "Autorità di gestione: Regione del Veneto - Direzione AdG FEASR e Foreste"
-msgstr ""
+msgstr "Managing Authority: Regione del Veneto - Direzione AdG FEASR e Foreste"
 
 #: ../../intro.rst:17
 msgid ""
 "Il Manuale è stato realizzato da `Gter srl`_  e distribuito con licenza "
 "https://creativecommons.org/licenses/by/4.0/"
 msgstr ""
+"The Manual has been realized by `Gter srl`_  and is licensed under the license "
+"https://creativecommons.org/licenses/by/4.0/"
 
 #: ../../intro.rst:19
 msgid ""
