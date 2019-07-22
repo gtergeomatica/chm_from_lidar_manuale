@@ -242,6 +242,13 @@ msgid ""
 " un file con il ritaglio dei CHM generati sul confine dell'AOI "
 "selezionata."
 msgstr ""
+"Cálculo del CHM para la tile seleccionada. El CHM se calcula para cada "
+"una de las tile seleccionadas. Los archivos se guardan en la carpeta de salida"
+" definida por el usuario con formato y sistema de referencia proporcionado "
+"por el usuario configurando los parámetros de entrada desde la interfaz "
+"gráfica. Si la selección se realiza a través de una AOI, se generará"
+" un archivo con el recorte del CHM generado en el límite de la AOI "
+"seleccionada."
 
 #: ../../plugin.rst:26
 msgid ""
