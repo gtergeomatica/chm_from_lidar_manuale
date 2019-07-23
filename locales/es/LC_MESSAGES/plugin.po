@@ -548,46 +548,50 @@ msgid ""
 " si chiuderà l'interfaccia grafica e tutti i vari parametri di input "
 "verranno ripristinati ai loro valori di default."
 msgstr ""
-"**15 - Close:** l'interfaccia grafica del plugin resta aperta e attiva "
-"finchè l'utente non la chiuderà clickando sul tasto Close. In questo modo"
-" si chiuderà l'interfaccia grafica e tutti i vari parametri di input "
-"verranno ripristinati ai loro valori di default."
+"**15 - Close:** la interfaz gráfica del plugin permanece abierta y activa "
+"hasta que el usuario la cierre haciendo clic en el botón Close. Esto"
+" cierra la interfaz gráfica y todos los parámetros de entrada "
+"se restaurarán a sus valores predeterminados."
 
 #: ../../plugin.rst:49
 msgid "Esempi"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../plugin.rst:52
 msgid "Scelta della sola Campagna di Volo"
-msgstr ""
+msgstr "Elección de una sola Campaña de Vuelo/Relevamiento aéreo"
 
 #: ../../plugin.rst:53
 msgid ""
 "Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile"
 " appartenente alla campagna selezionata."
 msgstr ""
+"Eligiendo una sola campaña de vuelo, el CHM se calcula para cada tile"
+" que pertenece a la campaña seleccionada."
 
 #: ../../plugin.rst:57
 msgid ""
 "Nel caso della sola campagna di volo sono abilitate le funzioni che "
 "consentono:"
 msgstr ""
+"En el caso de la campaña de velo, solamente las siguientes "
+"funciones están habilitadas:"
 
 #: ../../plugin.rst:59 ../../plugin.rst:84
 msgid "la scelta del formato file,"
-msgstr ""
+msgstr "elegir el formato de archivo,"
 
 #: ../../plugin.rst:60 ../../plugin.rst:85
 msgid "la scelta del sistema di riferimento,"
-msgstr ""
+msgstr "elegir el sistema de referencia"
 
 #: ../../plugin.rst:61 ../../plugin.rst:86
 msgid "la rimozione dei valori negativi"
-msgstr ""
+msgstr "la eliminación de valores negativos"
 
 #: ../../plugin.rst:62 ../../plugin.rst:87
 msgid "la rimozione dei valori sopra una certa soglia"
-msgstr ""
+msgstr "la eliminación de valores por encima de un determinado umbral"
 
 #: ../../plugin.rst:64
 msgid ""
@@ -595,10 +599,13 @@ msgid ""
 "della risoluzione con cui crearlo. Infatti non scegliendo un'area di "
 "interesse non verrà prodotto alcun ritaglio."
 msgstr ""
+"Las funciones relacionadas con el clip y la elección de la resolución con "
+"la que crearlo permanecen inhabilitadas. De hecho, al no elegir un área "
+"de interés, no se producirá ningún recorte."
 
 #: ../../plugin.rst:66 ../../plugin.rst:91
 msgid "Clickando su OK si avvia il processo di calcolo"
-msgstr ""
+msgstr "Haga clic en OK para iniciar el proceso de cálculo"
 
 #: ../../plugin.rst:70
 msgid ""
@@ -610,16 +617,25 @@ msgid ""
 "**N_CHM** il nome dei file con relativa estensione del formato e nella "
 "colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
 msgstr ""
+"Los CHM calculados se cargan automáticamente en el proyecto Qgis "
+"junto con el archivo vectorial que contiene los tile para los que se calculó"
+" el CHM. Al abrir la tabla de esta capa vectorial, observamos que "
+"dentro de la columna **P_CHM** se insertó automáticamente la "
+"ruta a la carpeta donde se guardaron los CHM, en la carpeta "
+"**N_CHM** el nombre de los archivos con extensión relativa del formato y en la "
+"columna **EPSG_CHM** el código EPSG del sistema de referencia elegido."
 
 #: ../../plugin.rst:75
 msgid "Scelta di un'Area di interesse e della Campagna di Volo"
-msgstr ""
+msgstr "Elección de un área de interés y de la Campaña de Vuelo"
 
 #: ../../plugin.rst:76
 msgid ""
 "In questo caso verranno calcolati i CHM per tutte le tile che intersecano"
 " l'area di interesse selezionata."
 msgstr ""
+"En este caso, el CHM se calculará para todas las tile que intersecan con"
+" el área de interés seleccionada."
 
 #: ../../plugin.rst:80
 msgid ""
@@ -628,12 +644,18 @@ msgid ""
 "selezionate'*. Checkando la casella verranno utilizzate come area di "
 "interesse le sole geometrie selezionate, altrimenti l'interò layer."
 msgstr ""
+"Si la capa seleccionada como Área de Interés contiene geometrías "
+"seleccionadas, se activa la casilla de verificación *'Usar solo geometrías "
+"seleccionadas'*. Al marcar la casilla solo se utilizarán como Área de Interés "
+"las geometrías seleccionadas, de lo contrario, toda la capa."
 
 #: ../../plugin.rst:82
 msgid ""
 "Nel caso della scelta di un'AOI e della campagna di volo sono abilitate "
 "le funzioni che consentono:"
 msgstr ""
+"En el caso de elegir una AOI y la campaña de vuelo, las siguientes "
+"funciones están habilitadas:"
 
 #: ../../plugin.rst:89
 msgid ""
@@ -641,6 +663,9 @@ msgid ""
 " cui creare il file clip, in questo caso infatti il clip verrà creato con"
 " la risoluzione originaria della campagna."
 msgstr ""
+"Queda desactivada la función para elegir la resolución con"
+" la que se creará el archivo de clip, en este caso, el clip se creará con"
+" la resolución original de la campaña."
 
 #: ../../plugin.rst:95
 msgid ""
@@ -653,6 +678,14 @@ msgid ""
 "relativa estensione del formato e nella colonna **EPSG_CHM** il codice "
 "EPSG del sistema di riferimento scelto."
 msgstr ""
+"I CHM calcolati e il file clip vengono automaticamente caricati nel "
+"progetto Qgis insieme al file vettoriale che contiene le tile per cui è "
+"stato calcolato il CHM. Anche in questo caso aprendo la tabella di questo"
+" layer vettoriale, si nota che all'interno della colonna **P_CHM** è "
+"stato automaticamente inserito il percorso alla cartella in cui sono "
+"stati salvati i CHM, nella cartella **N_CHM** il nome dei file con "
+"relativa estensione del formato e nella colonna **EPSG_CHM** il codice "
+"EPSG del sistema di riferimento scelto."
 
 #: ../../plugin.rst:98
 msgid "Scelta della sola Area di interesse"
