@@ -753,5 +753,5 @@ msgstr ""
 "bloquea y se devolverá un mensaje con información relacionada con "
 "las diferentes campañas de vuelo (Entidad, nombre de la campaña, año y"
 " resolución) y se le pedirá al usuario que seleccione la campaña para"
-" la que desea calcular el CHM."
+" la que desea calcular el CHM. "
 
