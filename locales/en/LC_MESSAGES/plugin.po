@@ -308,6 +308,12 @@ msgid ""
 "questo momento questa funzione non è ancora attiva, verrà integrata nel "
 "codice nei giorni seguenti al corso."
 msgstr ""
+"**3 - Select di autority:** among the different information stored in"
+" the attribute table of the tile layer (tile_dsm_dtm) it is also included "
+"the Authority who menaged the flight campaign. The drop-down menu lists "
+"all the authorities in the attribute table hence it is possible to select"
+" the desired authority and consequently visulize only the flight campaigns "
+"managed by the selected authority (see point 4) in the related drop-down menu."
 
 #: ../../plugin.rst:35
 msgid ""
