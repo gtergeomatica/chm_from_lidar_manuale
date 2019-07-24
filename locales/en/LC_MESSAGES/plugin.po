@@ -261,7 +261,6 @@ msgstr ""
 " toolbar. "
 
 #: ../../plugin.rst:32
-#, fuzzy
 msgid ""
 "**1 - Seleziona area di interesse:** da qui è possibile selezionare il "
 "layer vettoriale contenente le geometrie dell'are di interesse per la "
@@ -277,7 +276,6 @@ msgstr ""
 "the QGIS project before running the plugin."
 
 #: ../../plugin.rst:33
-#, fuzzy
 msgid ""
 "**2 - Usa solo le geometrie selezionate:** qualora il layer dell'AOI "
 "selezionato avesse geometrie selezionate la check box si attiva. "
@@ -298,7 +296,6 @@ msgstr ""
 "will be disabled. "
 
 #: ../../plugin.rst:34
-#, fuzzy
 msgid ""
 "**3 - Seleziona ente:** tra le varie informazioni immagazzinate nella "
 "tabella del layer delle tile (tile_dsm_dtm) è presente anche l'Ente che "
