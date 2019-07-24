@@ -238,12 +238,20 @@ msgid ""
 " un file con il ritaglio dei CHM generati sul confine dell'AOI "
 "selezionata."
 msgstr ""
+"Computing the CHM of the selected tiles. The CHM is computed for each "
+"selected tile. Files are saved in the output folder with "
+" the format and CRS provided by the user setting the input parameters "
+"from the graphical user interface. "
+"If the selection of the tiles is performed using an AOI, another raster file will be"
+" created. It consists of the clipped CHM files clipped along the boundary of the selected AOI. "
 
 #: ../../plugin.rst:26
 msgid ""
 "I risultati finali ovvero i CHM e il clip vengono automaticamente "
 "caricati all'interno del progetto QGIS."
 msgstr ""
+"The final results, i.e. the CHM and the clip file, are automatically "
+"uploaded within the QGIS project."
 
 #: ../../plugin.rst:28
 msgid ""
