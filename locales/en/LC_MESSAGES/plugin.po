@@ -507,13 +507,12 @@ msgid ""
 " a modificare i parametri necessari e successivamente clickare nuovamente"
 " il tasto ok per rilanciare il processamento."
 msgstr ""
-"**14 - OK:** è il pulsante che l'ancia l'intero processamento. Una volta "
-"definiti tutti i parametri in input l'utente clickando sul pulsante Ok "
-"darà avvio al processo vero e proprio. Come già anticipato al punto 12, "
-"in caso di messaggi di errore che richiedano da parte dell'utente "
-"un'ulteriore interazione con l'interfaccia grafica, sarà possibile andare"
-" a modificare i parametri necessari e successivamente clickare nuovamente"
-" il tasto ok per rilanciare il processamento."
+"**14 - OK:** it is the button that runs the process. When the "
+"input parameters are defined by the user, clicking the OK button "
+"the process will start. As already mentioned (see point 12), "
+"in case of error message it will be possible to modify "
+"the input parameters and then run the process again clicking on the OK"
+" button."
 
 #: ../../plugin.rst:46
 msgid ""
@@ -522,42 +521,49 @@ msgid ""
 " si chiuderà l'interfaccia grafica e tutti i vari parametri di input "
 "verranno ripristinati ai loro valori di default."
 msgstr ""
+"**15 - Close:** the plugin graphical user interface will remain open and "
+"active until the user closes it clicking on the Close button. In thi way,"
+" the graphical user interface will be closed and the input parameters "
+"will be set to the default value."
 
 #: ../../plugin.rst:49
 msgid "Esempi"
-msgstr ""
+msgstr "Examples"
 
 #: ../../plugin.rst:52
 msgid "Scelta della sola Campagna di Volo"
-msgstr ""
+msgstr "Choosing only the flight campaign"
 
 #: ../../plugin.rst:53
 msgid ""
 "Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile"
 " appartenente alla campagna selezionata."
 msgstr ""
+"Choosing only the flight campaign, the CHM is computed for each tile"
+" belonging to the selected campaign."
 
 #: ../../plugin.rst:57
 msgid ""
 "Nel caso della sola campagna di volo sono abilitate le funzioni che "
 "consentono:"
 msgstr ""
+"In the case of the flight campaign only it is possible to: "
 
 #: ../../plugin.rst:59 ../../plugin.rst:84
 msgid "la scelta del formato file,"
-msgstr ""
+msgstr "choose the file format,"
 
 #: ../../plugin.rst:60 ../../plugin.rst:85
 msgid "la scelta del sistema di riferimento,"
-msgstr ""
+msgstr "choose the reference system,"
 
 #: ../../plugin.rst:61 ../../plugin.rst:86
 msgid "la rimozione dei valori negativi"
-msgstr ""
+msgstr "remove negative values"
 
 #: ../../plugin.rst:62 ../../plugin.rst:87
 msgid "la rimozione dei valori sopra una certa soglia"
-msgstr ""
+msgstr "remove values greater than a certain threshold"
 
 #: ../../plugin.rst:64
 msgid ""
@@ -565,10 +571,12 @@ msgid ""
 "della risoluzione con cui crearlo. Infatti non scegliendo un'area di "
 "interesse non verrà prodotto alcun ritaglio."
 msgstr ""
+"Instead all the functions related to the clip file generation are disabled. "
+"In fact, if no AOI is selected, any clip file will be created."
 
 #: ../../plugin.rst:66 ../../plugin.rst:91
 msgid "Clickando su OK si avvia il processo di calcolo"
-msgstr ""
+msgstr "Clicking on the OK button the computation process starts."
 
 #: ../../plugin.rst:70
 msgid ""
