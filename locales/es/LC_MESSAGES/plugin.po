@@ -517,7 +517,7 @@ msgstr ""
 
 #: ../../plugin.rst:45
 msgid ""
-"**14 - OK:** è il pulsante che l'ancia l'intero processamento. Una volta "
+"**14 - OK:** è il pulsante che lancia l'intero processamento. Una volta "
 "definiti tutti i parametri in input l'utente clickando sul pulsante Ok "
 "darà avvio al processo vero e proprio. Come già anticipato al punto 12, "
 "in caso di messaggi di errore che richiedano da parte dell'utente "
@@ -535,7 +535,7 @@ msgstr ""
 
 #: ../../plugin.rst:46
 msgid ""
-"**15 - Close:** l'interfaccia grafica del plugin resta aperta e attiva "
+"**15 - Chiudi:** l'interfaccia grafica del plugin resta aperta e attiva "
 "finchè l'utente non la chiuderà clickando sul tasto Close. In questo modo"
 " si chiuderà l'interfaccia grafica e tutti i vari parametri di input "
 "verranno ripristinati ai loro valori di default."
