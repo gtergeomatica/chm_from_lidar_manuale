@@ -121,7 +121,7 @@ msgid "**12 - Log:** in questa area compariranno durante il processo messaggi in
 msgstr ""
 
 #: ../../plugin.rst:44
-msgid "**13 - Clear Log:** si tratta di un bottone che pulisce l'area di testo eliminando i messaggi relativi a un processamento precedente."
+msgid "**13 - Pulisci Log:** si tratta di un bottone che pulisce l'area di testo eliminando i messaggi relativi a un processamento precedente."
 msgstr ""
 
 #: ../../plugin.rst:45
