@@ -271,7 +271,6 @@ msgstr ""
 "herramientas una vez se haya completado la instalación."
 
 #: ../../plugin.rst:32
-#, fuzzy
 msgid ""
 "**1 - Seleziona area di interesse:** da qui è possibile selezionare il "
 "layer vettoriale contenente le geometrie dell'are di interesse per la "
@@ -288,7 +287,6 @@ msgstr ""
 "proyecto Qgis."
 
 #: ../../plugin.rst:33
-#, fuzzy
 msgid ""
 "**2 - Usa solo le geometrie selezionate:** qualora il layer dell'AOI "
 "selezionato avesse geometrie selezionate la check box si attiva. "
@@ -311,7 +309,6 @@ msgstr ""
 "desactivará."
 
 #: ../../plugin.rst:34
-#, fuzzy
 msgid ""
 "**3 - Seleziona ente:** tra le varie informazioni immagazzinate nella "
 "tabella del layer delle tile (tile_dsm_dtm) è presente anche l'Ente che "
@@ -330,7 +327,6 @@ msgstr ""
 "está activa, se integrará en el código en los días posteriores al curso."
 
 #: ../../plugin.rst:35
-#, fuzzy
 msgid ""
 "**4 - Sleziona campagna:** sulla base dell'ente selezionato al punto 3, "
 "il menù a tendina elencherà tutte le campagne di volo gestite dall'ente. "
@@ -350,7 +346,6 @@ msgstr ""
 "en los próximos días como ya se mencionó en el punto 3."
 
 #: ../../plugin.rst:36
-#, fuzzy
 msgid ""
 "**5 - Nome del file Clip:** selezionando un'are di interesse è necessario"
 " indicare un nome per il raster che conterrà il CHM ritagliato sul "
@@ -372,7 +367,6 @@ msgstr ""
 "del archivo.**"
 
 #: ../../plugin.rst:37
-#, fuzzy
 msgid ""
 "**6 - Scegli la risoluzione (m):** da qui è possibile selezionare la "
 "risoluzione, espressa in metri, con cui verrà ricampionato il file del "
@@ -413,7 +407,6 @@ msgstr ""
 " dato de origen, el plugin devolverá un warning."
 
 #: ../../plugin.rst:38
-#, fuzzy
 msgid ""
 "**7 - Cartella di output:** premendo sul bottone (...) si aprirà una "
 "finestra di dialogo tipo esplora risorse da cui sarà possibile navigare "
@@ -465,7 +458,6 @@ msgstr ""
 " en el sistema de referencia solicitado."
 
 #: ../../plugin.rst:41
-#, fuzzy
 msgid ""
 "**10 - rimuovi valori < 0:** la casella di controllo permette appunto di "
 "gestire l'eliminazione di eventuali valori negativi dal CHM. Se la "
@@ -483,7 +475,6 @@ msgstr ""
 "valores negativos."
 
 #: ../../plugin.rst:42
-#, fuzzy
 msgid ""
 "**11- rimuovi valori > xx:** in questo caso inserendo un valore numerico "
 "intero nella box verranno eliminati dai CHM finali i valori maggiori del "
