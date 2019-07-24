@@ -326,7 +326,7 @@ msgstr ""
 
 #: ../../plugin.rst:35
 msgid ""
-"**4 - Sleziona campagna:** sulla base dell'ente selezionato al punto 3, "
+"**4 - Seleziona campagna:** sulla base dell'ente selezionato al punto 3, "
 "il menù a tendina elencherà tutte le campagne di volo gestite dall'ente. "
 "Sarà quindi possibile selezionare la campagna desiderata per la quale "
 "calcolare il CHM. NB: al momento il menù a tendina elenca tutte le "
