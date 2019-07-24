@@ -509,7 +509,7 @@ msgstr ""
 
 #: ../../plugin.rst:44
 msgid ""
-"**13 - Clear Log:** si tratta di un bottone che pulisce l'area di testo "
+"**13 - Pulisci Log:** si tratta di un bottone che pulisce l'area di testo "
 "eliminando i messaggi relativi a un processamento precedente."
 msgstr ""
 "**13 - Clear Log:** se trata de un botón que limpia el área de texto "
