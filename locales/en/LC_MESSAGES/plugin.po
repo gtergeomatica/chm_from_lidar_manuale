@@ -628,7 +628,7 @@ msgstr ""
 
 #: ../../plugin.rst:89
 msgid ""
-"Resta invece disabilitate la funzione per la scelta della risoluzione con"
+"Resta invece disabilitata la funzione per la scelta della risoluzione con"
 " cui creare il file clip, in questo caso infatti il clip verrà creato con"
 " la risoluzione originaria della campagna."
 msgstr ""
