@@ -178,7 +178,7 @@ msgid "Clickando su OK si avvia il processo di calcolo"
 msgstr ""
 
 #: ../../plugin.rst:70
-msgid "I CHM calcolati vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella cartella **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
+msgid "I CHM calcolati vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella colonna **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
 msgstr ""
 
 #: ../../plugin.rst:75
@@ -190,7 +190,7 @@ msgid "In questo caso verranno calcolati i CHM per tutte le tile che intersecano
 msgstr ""
 
 #: ../../plugin.rst:80
-msgid "Se il layer selezionato come Area di Interesse contiene geometrie selezionate, si attiva la casella di controllo *'Usa solo le geometrie selezionate'*. Checkando la casella verranno utilizzate come area di interesse le sole geometrie selezionate, altrimenti l'interò layer."
+msgid "Se il layer selezionato come Area di Interesse contiene geometrie selezionate, si attiva la casella di controllo *'Usa solo le geometrie selezionate'*. Checkando la casella verranno utilizzate come area di interesse le sole geometrie selezionate, altrimenti l'intero layer."
 msgstr ""
 
 #: ../../plugin.rst:82
@@ -198,11 +198,11 @@ msgid "Nel caso della scelta di un'AOI e della campagna di volo sono abilitate l
 msgstr ""
 
 #: ../../plugin.rst:89
-msgid "Resta invece disabilitate le funzione per la scelta della risoluzione con cui creare il file clip, in questo caso infatti il clip verrà creato con la risoluzione originaria della campagna."
+msgid "Resta invece disabilitata la funzione per la scelta della risoluzione con cui creare il file clip, in questo caso infatti il clip verrà creato con la risoluzione originaria della campagna."
 msgstr ""
 
 #: ../../plugin.rst:95
-msgid "I CHM calcolati e il file clip vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Anche in questo caso aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella cartella **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
+msgid "I CHM calcolati e il file clip vengono automaticamente caricati nel progetto Qgis insieme al file vettoriale che contiene le tile per cui è stato calcolato il CHM. Anche in questo caso aprendo la tabella di questo layer vettoriale, si nota che all'interno della colonna **P_CHM** è stato automaticamente inserito il percorso alla cartella in cui sono stati salvati i CHM, nella colonna **N_CHM** il nome dei file con relativa estensione del formato e nella colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
 msgstr ""
 
 #: ../../plugin.rst:98
@@ -218,7 +218,7 @@ msgid "1 - l'AOI interseca una sola campagna di volo: verranno calcolati i CHM d
 msgstr ""
 
 #: ../../plugin.rst:102
-msgid "2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatte in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore."
+msgid "2 - l'AOI interseca più campagne di volo non sovrapposte: verranno calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato il clip. In questo caso però verranno fatti in fase di calcolo due controlli, uno sul sistema di riferimento e uno sulla risoluzione. Qualora le campagne abbiano sistema di riferimento diverso il processo si bloccherà restituendo un messaggio di warning e verrà richiesto all'utente di selezionare un sistema di riferimento a meno che non sia stato già selezionato in fase di settaggio dei parametri in input. Qualora invece le campagne di volo abbiano risoluzione diversa e non sia stata definita una risoluzione in input, verrà presa di default quella maggiore."
 msgstr ""
 
 #: ../../plugin.rst:103
