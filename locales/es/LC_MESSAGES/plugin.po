@@ -125,7 +125,7 @@ msgstr ""
 "El cálculo del CHM se procesará automáticamente para todos los tile "
 "seleccionados según los parámetros solicitados al usuario. De hecho, es "
 "posible calcular el CHM de cada tile perteneciente a un relevamiento "
-"aéreo específico, o para todas las teselas (tiles) que se intersecan con "
+"aéreo específico, o para todas las teselas (tiles) que se intersectan con "
 "un Área de Interés (en adelante AOI) definida por el usuario."
 
 #: ../../plugin.rst:14
