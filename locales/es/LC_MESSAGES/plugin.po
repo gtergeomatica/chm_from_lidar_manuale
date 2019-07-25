@@ -626,7 +626,7 @@ msgid ""
 "In questo caso verranno calcolati i CHM per tutte le tile che intersecano"
 " l'area di interesse selezionata."
 msgstr ""
-"En este caso, el CHM se calculará para todas las tile que intersecan con "
+"En este caso, el CHM se calculará para todas las tile que intersectan con "
 "el área de interés seleccionada."
 
 #: ../../plugin.rst:80
