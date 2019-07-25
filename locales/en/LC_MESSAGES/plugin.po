@@ -588,10 +588,17 @@ msgid ""
 "**N_CHM** il nome dei file con relativa estensione del formato e nella "
 "colonna **EPSG_CHM** il codice EPSG del sistema di riferimento scelto."
 msgstr ""
+"The computed CHM files and the vector layer with the selected tiles "
+"are automatically loaded in the QGIS project. Looking at the attribute"
+" table of the created vector layer, it is noted that the path to the output"
+" folder has been automatically added to the **P_CHM** field, the "
+"name with related extension of the CHM file has been added to the "
+"**N_CHM** field and the EPSG code of the CHM reference system has "
+"been added to the **EPSG_CHM** field."
 
 #: ../../plugin.rst:75
 msgid "Scelta di un'Area di interesse e della Campagna di Volo"
-msgstr ""
+msgstr "Choosing an Area of Interest and a Flight Campaign"
 
 #: ../../plugin.rst:76
 msgid ""
