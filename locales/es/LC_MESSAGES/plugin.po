@@ -393,7 +393,7 @@ msgstr ""
 "clip. El cuadro para elegir la resolución se activará solo si se  "
 "selecciona el AOI, sin seleccionar una campaña específica. De hecho, si "
 "se selecciona también una campaña de vuelo, el cuadro se desactivará y el"
-" clip se devolverá con la misma resolución que el CHM, es decir, la "
+" clip se devolverá con la misma resolución que el CHM, es decir, con la "
 "original. NB: si el usuario define un valor de resolución inferior que el"
 " dato de origen, el plugin devolverá un warning."
 
