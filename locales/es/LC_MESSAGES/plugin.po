@@ -176,7 +176,7 @@ msgstr ""
 "Como ya se mencionó, el objetivo principal del plugin CHM from LIDAR es "
 "calcular el CHM a partir de los datos Lidar (DSM y DTM) obtenidos de las "
 "distintas campañas de vuelo que se han realizado en el territorio. El "
-"workflow general del Plugin se compone de:"
+"workflow general del Plugin es el siguiente:"
 
 #: ../../plugin.rst:22
 msgid ""
