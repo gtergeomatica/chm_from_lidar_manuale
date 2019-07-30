@@ -724,7 +724,7 @@ msgstr ""
 "cuales se calculó el CHM. En este caso también, al abrir la tabla de esta"
 " capa vectorial, observamos que dentro de la columna **P_CHM** se insertó"
 " automáticamente la ruta a la carpeta en la que se guardaron los CHM, en "
-"la columna **N_CHM** el nombre de los archivos con extensión relativa del"
+"la columna **N_CHM** el nombre de los archivos con extensión relativa al"
 " formato y en la columna **EPSG_CHM** el código EPSG del sistema de "
 "referencia elegido."
 
