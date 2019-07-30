@@ -339,6 +339,18 @@ msgid ""
 "tile selezionate e la checkbox non è spuntata, il plugin ovviamente "
 "calcolerà il CHM corrispondente."
 msgstr ""
+"**5 - Recompute CHM:** if the path and the name (respectively P_CHM and N_CHM fields)qualora all'interno del layer delle tile "
+"(tile_dsm_dtm) venisse trovato percorso e nome (rispettivamente colonna "
+"P_CHM e N_CHM) di file CHM già calcolati, il plugin di default utilizza "
+"questi file per procedere con gli step successivi di calcolo (es. "
+"applicazioni di filtri su valori negativi e/o soglia sui valori massimi, "
+"riproiezione, conversione di formato, clip, ecc.) in base ai parametri di"
+" input definiti dall'utente. Ceckando la checkbox invece i CHM verranno "
+"ricalcolati, anche se già presenti nel layer delle tile, procedendo poi "
+"agli step successivi di calcolo in base ai parametri in input definiti "
+"dall'utente. Se invece non viene trovato il CHM corrispondente per le "
+"tile selezionate e la checkbox non è spuntata, il plugin ovviamente "
+"calcolerà il CHM corrispondente."
 
 #: ../../plugin.rst:37
 #, fuzzy
