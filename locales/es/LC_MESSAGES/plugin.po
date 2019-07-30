@@ -366,7 +366,6 @@ msgstr ""
 "calculará el CHM correspondiente."
 
 #: ../../plugin.rst:37
-#, fuzzy
 msgid ""
 "**6 - Nome del file Clip:** selezionando un'are di interesse è necessario"
 " indicare un nome per il raster che conterrà il CHM ritagliato sul "
@@ -388,7 +387,6 @@ msgstr ""
 "del archivo.**"
 
 #: ../../plugin.rst:38
-#, fuzzy
 msgid ""
 "**7 - Scegli la risoluzione (m):** da qui è possibile selezionare la "
 "risoluzione, espressa in metri, con cui verrà ricampionato il file del "
@@ -429,7 +427,6 @@ msgstr ""
 " dato de origen, el plugin devolverá un warning."
 
 #: ../../plugin.rst:39
-#, fuzzy
 msgid ""
 "**8 - Cartella di output:** premendo sul bottone (...) si aprirà una "
 "finestra di dialogo tipo esplora risorse da cui sarà possibile navigare "
@@ -453,7 +450,6 @@ msgstr ""
 "y sucesivamente reiniciar el cálculo."
 
 #: ../../plugin.rst:40
-#, fuzzy
 msgid ""
 "**9 - scelta del formato:** dal menù a tendina è possibile selezionare il"
 " formato di output con cui si vogliono salvare i risultati del processo, "
@@ -466,7 +462,6 @@ msgstr ""
 "Por defecto, el formato seleccionado es el GeoTIFF."
 
 #: ../../plugin.rst:41
-#, fuzzy
 msgid ""
 "**10 - scelta del sistema di riferimento:** clickando sul bottone si "
 "aprirà la finestra di dialogo standard di Qgis per la scelta del sistema "
@@ -483,7 +478,6 @@ msgstr ""
 " en el sistema de referencia solicitado."
 
 #: ../../plugin.rst:42
-#, fuzzy
 msgid ""
 "**11 - rimuovi valori < 0:** la casella di controllo permette appunto di "
 "gestire l'eliminazione di eventuali valori negativi dal CHM. Se la "
@@ -501,7 +495,6 @@ msgstr ""
 "valores negativos."
 
 #: ../../plugin.rst:43
-#, fuzzy
 msgid ""
 "**12- rimuovi valori > xx:** in questo caso inserendo un valore numerico "
 "intero nella box verranno eliminati dai CHM finali i valori maggiori del "
@@ -520,7 +513,6 @@ msgstr ""
 "predeterminado, el CHM se devolverá con los valores reales."
 
 #: ../../plugin.rst:44
-#, fuzzy
 msgid ""
 "**13 - Log:** in questa area compariranno durante il processo messaggi "
 "informativi sullo stato di avanzamento del processo. Qui appariranno "
@@ -545,7 +537,6 @@ msgstr ""
 "terminado'."
 
 #: ../../plugin.rst:45
-#, fuzzy
 msgid ""
 "**14 - Pulisci Log:** si tratta di un bottone che pulisce l'area di testo"
 " eliminando i messaggi relativi a un processamento precedente."
@@ -562,7 +553,6 @@ msgstr ""
 "navegador, redireccionando al usuario a la página web del manual del plugin."
 
 #: ../../plugin.rst:47
-#, fuzzy
 msgid ""
 "**16 - OK:** è il pulsante che lancia l'intero processamento. Una volta "
 "definiti tutti i parametri in input l'utente clickando sul pulsante Ok "
@@ -581,7 +571,6 @@ msgstr ""
 "botón Ok para reiniciar el proceso."
 
 #: ../../plugin.rst:48
-#, fuzzy
 msgid ""
 "**17 - Chiudi:** l'interfaccia grafica del plugin resta aperta e attiva "
 "finchè l'utente non la chiuderà clickando sul tasto Close. In questo modo"
