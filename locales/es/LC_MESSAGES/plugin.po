@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manuale - Plugin CHM from LIDAR \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-24 12:44+0200\n"
+"POT-Creation-Date: 2019-07-30 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,8 +125,8 @@ msgstr ""
 "El cálculo del CHM se procesará automáticamente para todos los tile "
 "seleccionados según los parámetros solicitados al usuario. De hecho, es "
 "posible calcular el CHM de cada tile perteneciente a un relevamiento "
-"aéreo específico, o para todas las teselas (tiles) que se intersectan con "
-"un Área de Interés (en adelante AOI) definida por el usuario."
+"aéreo específico, o para todas las teselas (tiles) que se intersectan con"
+" un Área de Interés (en adelante AOI) definida por el usuario."
 
 #: ../../plugin.rst:14
 msgid ""
@@ -320,9 +320,10 @@ msgstr ""
 "**3 - Select di autority:** entre la información almacenada en la tabla "
 "de la capa del tile (tile_dsm_dtm) también está el Ente/autoridad que ha "
 "gestionado la campaña de vuelo. El menú desplegable enumera todas las "
-"entidades indicadas dentro de la tabla, por lo tanto, es posible seleccionar"
-" la entidad deseada y en consecuencia, mostrar solo las campañas de vuelo "
-"gestionadas por dicha entidad seleccionada en el menú desplegable, según el punto 4."
+"entidades indicadas dentro de la tabla, por lo tanto, es posible "
+"seleccionar la entidad deseada y en consecuencia, mostrar solo las "
+"campañas de vuelo gestionadas por dicha entidad seleccionada en el menú "
+"desplegable, según el punto 4."
 
 #: ../../plugin.rst:35
 msgid ""
@@ -338,7 +339,24 @@ msgstr ""
 
 #: ../../plugin.rst:36
 msgid ""
-"**5 - Nome del file Clip:** selezionando un'are di interesse è necessario"
+"**5 - Ricalcola i CHM:** qualora all'interno del layer delle tile "
+"(tile_dsm_dtm) venisse trovato percorso e nome (rispettivamente colonna "
+"P_CHM e N_CHM) di file CHM già calcolati, il plugin di default utilizza "
+"questi file per procedere con gli step successivi di calcolo (es. "
+"applicazioni di filtri su valori negativi e/o soglia sui valori massimi, "
+"riproiezione, conversione di formato, clip, ecc.) in base ai parametri di"
+" input definiti dall'utente. Ceckando la checkbox invece i CHM verranno "
+"ricalcolati, anche se già presenti nel layer delle tile, procedendo poi "
+"agli step successivi di calcolo in base ai parametri in input definiti "
+"dall'utente. Se invece non viene trovato il CHM corrispondente per le "
+"tile selezionate e la checkbox non è spuntata, il plugin ovviamente "
+"calcolerà il CHM corrispondente."
+msgstr ""
+
+#: ../../plugin.rst:37
+#, fuzzy
+msgid ""
+"**6 - Nome del file Clip:** selezionando un'are di interesse è necessario"
 " indicare un nome per il raster che conterrà il CHM ritagliato sul "
 "confine dell'area AOI selezionata. E' necessario indicare solo il nome "
 "senza l'estensione del file che verrà aggiunta automaticamente sulla base"
@@ -357,9 +375,10 @@ msgstr ""
 "clip.*). **NB: no inserte espacios o caracteres especiales en el nombre "
 "del archivo.**"
 
-#: ../../plugin.rst:37
+#: ../../plugin.rst:38
+#, fuzzy
 msgid ""
-"**6 - Scegli la risoluzione (m):** da qui è possibile selezionare la "
+"**7 - Scegli la risoluzione (m):** da qui è possibile selezionare la "
 "risoluzione, espressa in metri, con cui verrà ricampionato il file del "
 "clip. I CHM delle singole tile vengono infatti calcolati con la "
 "risoluzione originaria del DSM e DTM, mentre per quanto riguarda il clip "
@@ -397,9 +416,10 @@ msgstr ""
 "original. NB: si el usuario define un valor de resolución inferior que el"
 " dato de origen, el plugin devolverá un warning."
 
-#: ../../plugin.rst:38
+#: ../../plugin.rst:39
+#, fuzzy
 msgid ""
-"**7 - Cartella di output:** premendo sul bottone (...) si aprirà una "
+"**8 - Cartella di output:** premendo sul bottone (...) si aprirà una "
 "finestra di dialogo tipo esplora risorse da cui sarà possibile navigare "
 "all'interno della propria macchina e selezionare la cartella dentro cui "
 "si desiderano salvare tutti gli output del processo (CHM delle singole "
@@ -420,37 +440,40 @@ msgstr ""
 "error, el proceso se bloqueará y el usuario podrá seleccionar la carpeta "
 "y sucesivamente reiniciar el cálculo."
 
-#: ../../plugin.rst:39
+#: ../../plugin.rst:40
+#, fuzzy
 msgid ""
-"**8 - scelta del formato:** dal menù a tendina è possibile selezionare il"
+"**9 - scelta del formato:** dal menù a tendina è possibile selezionare il"
 " formato di output con cui si vogliono salvare i risultati del processo, "
 "sia i CHM delle singole tile che il clip file. Di default il formato "
 "selezionato è il GeoTIFF."
 msgstr ""
-"**8 - Selección del formato:** en el menú desplegable se puede seleccional "
-"el formato de salida con el que desea guardar los resultados del proceso,"
-" tanto el CHM de los tile individuales como el archivo clip. Por defecto,"
-" el formato seleccionado es el GeoTIFF."
+"**8 - Selección del formato:** en el menú desplegable se puede "
+"seleccional el formato de salida con el que desea guardar los resultados "
+"del proceso, tanto el CHM de los tile individuales como el archivo clip. "
+"Por defecto, el formato seleccionado es el GeoTIFF."
 
-#: ../../plugin.rst:40
+#: ../../plugin.rst:41
+#, fuzzy
 msgid ""
-"**9 - scelta del sistema di riferimento:** clickando sul bottone si "
+"**10 - scelta del sistema di riferimento:** clickando sul bottone si "
 "aprirà la finestra di dialogo standard di Qgis per la scelta del sistema "
 "di riferimento. Di default il plugin utilizza il sistema di riferimento "
 "originario del DSM e DTM. Qualora invece l'utente selezionasse un sistema"
 " di riferimento diverso, gli output del processamento saranno "
 "riproiettati nel sistema di riferimento richiesto."
 msgstr ""
-"**9 - Selección del sistema de referencia:** al hacer clic en el botón se "
-"abrirá el cuatro de diálogo estándar de Qgis para elegir el sistema de "
+"**9 - Selección del sistema de referencia:** al hacer clic en el botón se"
+" abrirá el cuatro de diálogo estándar de Qgis para elegir el sistema de "
 "referencia. Por defecto, el plugin utiliza el sistema de referencia "
 "original del DSM y DTM. En el caso de que el usuario seleccione un "
 "sistema de referencia diferente, las salidas del proceso se reproyectarán"
 " en el sistema de referencia solicitado."
 
-#: ../../plugin.rst:41
+#: ../../plugin.rst:42
+#, fuzzy
 msgid ""
-"**10 - rimuovi valori < 0:** la casella di controllo permette appunto di "
+"**11 - rimuovi valori < 0:** la casella di controllo permette appunto di "
 "gestire l'eliminazione di eventuali valori negativi dal CHM. Se la "
 "casella è spuntata i valori negativi presenti nei CHM calcolati verranno "
 "posti uguali a 0. Di default la casella è già spuntata ma è sufficiente "
@@ -465,11 +488,12 @@ msgstr ""
 "resultantes con el valor mínimo real, por lo que también se incluyen los "
 "valores negativos."
 
-#: ../../plugin.rst:42
+#: ../../plugin.rst:43
+#, fuzzy
 msgid ""
-"**11- rimuovi valori > xx:** in questo caso inserendo un valore numerico "
+"**12- rimuovi valori > xx:** in questo caso inserendo un valore numerico "
 "intero nella box verranno eliminati dai CHM finali i valori maggiori del "
-"valore di soglia indicato. Come nel caso della soglia per i valori "c
+"valore di soglia indicato. Come nel caso della soglia per i valori "
 "negativi, anche in questo caso tutti i pixel con valore maggiore di "
 "quello indicato verranno posti uguali al valore stesso. Di default il "
 "valore è 0, qualora l'utente non specifichi un valore di soglia diverso "
@@ -483,9 +507,10 @@ msgstr ""
 "es 0, si el usuario no especifica un valor de umbral diferente al valor "
 "predeterminado, el CHM se devolverá con los valores reales."
 
-#: ../../plugin.rst:43
+#: ../../plugin.rst:44
+#, fuzzy
 msgid ""
-"**12 - Log:** in questa area compariranno durante il processo messaggi "
+"**13 - Log:** in questa area compariranno durante il processo messaggi "
 "informativi sullo stato di avanzamento del processo. Qui appariranno "
 "anche eventuali messaggi di warning e di errore. Nel caso di warning si "
 "tratta solo di avvisi per l'utente che però non bloccano il processo, in "
@@ -507,17 +532,25 @@ msgstr ""
 "entrada indicados para el cálculo, seguido de la frase 'Proceso "
 "terminado'."
 
-#: ../../plugin.rst:44
+#: ../../plugin.rst:45
+#, fuzzy
 msgid ""
-"**13 - Pulisci Log:** si tratta di un bottone che pulisce l'area di testo "
-"eliminando i messaggi relativi a un processamento precedente."
+"**14 - Pulisci Log:** si tratta di un bottone che pulisce l'area di testo"
+" eliminando i messaggi relativi a un processamento precedente."
 msgstr ""
 "**13 - Clear Log:** se trata de un botón que limpia el área de texto "
 "eliminando los mensajes relacionados con un procesamiento anterior."
 
-#: ../../plugin.rst:45
+#: ../../plugin.rst:46
 msgid ""
-"**14 - OK:** è il pulsante che lancia l'intero processamento. Una volta "
+"**15 - Guida:** si tratta di un bottone che apre automaticamente il "
+"browser rimandando alla pagina web del manuale del plugin."
+msgstr ""
+
+#: ../../plugin.rst:47
+#, fuzzy
+msgid ""
+"**16 - OK:** è il pulsante che lancia l'intero processamento. Una volta "
 "definiti tutti i parametri in input l'utente clickando sul pulsante Ok "
 "darà avvio al processo vero e proprio. Come già anticipato al punto 12, "
 "in caso di messaggi di errore che richiedano da parte dell'utente "
@@ -533,9 +566,10 @@ msgstr ""
 "cambiar los parámetros necesarios y luego hacer clic nuevamente en el "
 "botón Ok para reiniciar el proceso."
 
-#: ../../plugin.rst:46
+#: ../../plugin.rst:48
+#, fuzzy
 msgid ""
-"**15 - Chiudi:** l'interfaccia grafica del plugin resta aperta e attiva "
+"**17 - Chiudi:** l'interfaccia grafica del plugin resta aperta e attiva "
 "finchè l'utente non la chiuderà clickando sul tasto Close. In questo modo"
 " si chiuderà l'interfaccia grafica e tutti i vari parametri di input "
 "verranno ripristinati ai loro valori di default."
@@ -545,15 +579,15 @@ msgstr ""
 "cierra la interfaz gráfica y todos los parámetros de entrada se "
 "restaurarán a sus valores predeterminados."
 
-#: ../../plugin.rst:49
+#: ../../plugin.rst:51
 msgid "Esempi"
 msgstr "Ejemplos"
 
-#: ../../plugin.rst:52
+#: ../../plugin.rst:54
 msgid "Scelta della sola Campagna di Volo"
 msgstr "Elección de una sola Campaña de Vuelo/Relevamiento aéreo"
 
-#: ../../plugin.rst:53
+#: ../../plugin.rst:55
 msgid ""
 "Scegliendo la sola campagna di volo, viene calcolato il CHM per ogni tile"
 " appartenente alla campagna selezionata."
@@ -561,7 +595,7 @@ msgstr ""
 "Eligiendo una sola campaña de vuelo, el CHM se calcula para cada tile que"
 " pertenece a la campaña seleccionada."
 
-#: ../../plugin.rst:57
+#: ../../plugin.rst:59
 msgid ""
 "Nel caso della sola campagna di volo sono abilitate le funzioni che "
 "consentono:"
@@ -569,23 +603,23 @@ msgstr ""
 "En el caso de la campaña de velo, solamente las siguientes funciones "
 "están habilitadas:"
 
-#: ../../plugin.rst:59 ../../plugin.rst:84
+#: ../../plugin.rst:61 ../../plugin.rst:86
 msgid "la scelta del formato file,"
 msgstr "elegir el formato de archivo,"
 
-#: ../../plugin.rst:60 ../../plugin.rst:85
+#: ../../plugin.rst:62 ../../plugin.rst:87
 msgid "la scelta del sistema di riferimento,"
 msgstr "elegir el sistema de referencia"
 
-#: ../../plugin.rst:61 ../../plugin.rst:86
+#: ../../plugin.rst:63 ../../plugin.rst:88
 msgid "la rimozione dei valori negativi"
 msgstr "la eliminación de valores negativos"
 
-#: ../../plugin.rst:62 ../../plugin.rst:87
+#: ../../plugin.rst:64 ../../plugin.rst:89
 msgid "la rimozione dei valori sopra una certa soglia"
 msgstr "la eliminación de valores por encima de un determinado umbral"
 
-#: ../../plugin.rst:64
+#: ../../plugin.rst:66
 msgid ""
 "Restano invece disabilitate le funzioni relative al clip e alla scelta "
 "della risoluzione con cui crearlo. Infatti non scegliendo un'area di "
@@ -595,11 +629,11 @@ msgstr ""
 " la que crearlo permanecen inhabilitadas. De hecho, al no elegir un área "
 "de interés, no se producirá ningún recorte."
 
-#: ../../plugin.rst:66 ../../plugin.rst:91
+#: ../../plugin.rst:68 ../../plugin.rst:93
 msgid "Clickando su OK si avvia il processo di calcolo"
 msgstr "Haga clic en OK para iniciar el proceso de cálculo"
 
-#: ../../plugin.rst:70
+#: ../../plugin.rst:72
 msgid ""
 "I CHM calcolati vengono automaticamente caricati nel progetto Qgis "
 "insieme al file vettoriale che contiene le tile per cui è stato calcolato"
@@ -617,19 +651,19 @@ msgstr ""
 "archivos con extensión relativa del formato y en la columna **EPSG_CHM** "
 "el código EPSG del sistema de referencia elegido."
 
-#: ../../plugin.rst:75
+#: ../../plugin.rst:77
 msgid "Scelta di un'Area di interesse e della Campagna di Volo"
 msgstr "Elección de un área de interés y de la Campaña de Vuelo"
 
-#: ../../plugin.rst:76
+#: ../../plugin.rst:78
 msgid ""
 "In questo caso verranno calcolati i CHM per tutte le tile che intersecano"
 " l'area di interesse selezionata."
 msgstr ""
-"En este caso, el CHM se calculará para todas las tile que intersectan con "
-"el área de interés seleccionada."
+"En este caso, el CHM se calculará para todas las tile que intersectan con"
+" el área de interés seleccionada."
 
-#: ../../plugin.rst:80
+#: ../../plugin.rst:82
 msgid ""
 "Se il layer selezionato come Area di Interesse contiene geometrie "
 "selezionate, si attiva la casella di controllo *'Usa solo le geometrie "
@@ -642,7 +676,7 @@ msgstr ""
 "Área de Interés las geometrías seleccionadas, de lo contrario, toda la "
 "capa."
 
-#: ../../plugin.rst:82
+#: ../../plugin.rst:84
 msgid ""
 "Nel caso della scelta di un'AOI e della campagna di volo sono abilitate "
 "le funzioni che consentono:"
@@ -650,7 +684,7 @@ msgstr ""
 "En el caso de elegir una AOI y la campaña de vuelo, las siguientes "
 "funciones están habilitadas:"
 
-#: ../../plugin.rst:89
+#: ../../plugin.rst:91
 msgid ""
 "Resta invece disabilitata la funzione per la scelta della risoluzione con"
 " cui creare il file clip, in questo caso infatti il clip verrà creato con"
@@ -660,7 +694,7 @@ msgstr ""
 "creará el archivo de clip, en este caso, el clip se creará con la "
 "resolución original de la campaña."
 
-#: ../../plugin.rst:95
+#: ../../plugin.rst:97
 msgid ""
 "I CHM calcolati e il file clip vengono automaticamente caricati nel "
 "progetto Qgis insieme al file vettoriale che contiene le tile per cui è "
@@ -680,11 +714,11 @@ msgstr ""
 " formato y en la columna **EPSG_CHM** el código EPSG del sistema de "
 "referencia elegido."
 
-#: ../../plugin.rst:98
+#: ../../plugin.rst:100
 msgid "Scelta della sola Area di interesse"
 msgstr "Elección de una sola Área de Interés"
 
-#: ../../plugin.rst:99
+#: ../../plugin.rst:101
 msgid ""
 "Si tratta del caso in cui l'utente voglia calcolare il CHM per una "
 "particolare area di interesse senza però conoscere la campagna o le "
@@ -696,7 +730,7 @@ msgstr ""
 "la interseccionan. En este caso, se pueden distinguir tres casos en los "
 "que el plugin actuará de manera diferente:"
 
-#: ../../plugin.rst:101
+#: ../../plugin.rst:103
 msgid ""
 "1 - l'AOI interseca una sola campagna di volo: verranno calcolati i CHM "
 "di tutte le tile che intersecano l'AOI e verrà generato il clip. In "
@@ -709,7 +743,7 @@ msgstr ""
 "de referencia originales de los datos si el usuario no ha configurado "
 "otros diferentes."
 
-#: ../../plugin.rst:102
+#: ../../plugin.rst:104
 msgid ""
 "2 - l'AOI interseca più campagne di volo non sovrapposte: verranno "
 "calcolati i CHM di tutte le tile che intersecano l'AOI e verrà generato "
@@ -735,7 +769,7 @@ msgstr ""
 "definido una resolución de entrada, se tomará por defecto la resolución "
 "mayor."
 
-#: ../../plugin.rst:103
+#: ../../plugin.rst:105
 msgid ""
 "3 - l'AOI interseca più campagne di volo sovrapposte: il processo si "
 "blocca e verrà restituito un messaggio con elencate alcune informazioni "
@@ -746,6 +780,6 @@ msgstr ""
 "3 - La AOI se cruza con más campañas de vuelo superpuestas: el proceso se"
 " bloquea y se devolverá un mensaje con información relacionada con las "
 "diferentes campañas de vuelo (Entidad, nombre de la campaña, año y "
-"resolución) y se le pedirá al usuario que seleccione la campaña de la lista de "
-"entre las que desea calcular el CHM. "
+"resolución) y se le pedirá al usuario que seleccione la campaña de la "
+"lista de entre las que desea calcular el CHM. "
 
